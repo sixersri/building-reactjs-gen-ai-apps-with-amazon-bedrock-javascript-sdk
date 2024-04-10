@@ -77,13 +77,13 @@ export default ({ llm }) => {
                 </Box>
                 <Textarea
                     fitHeight
-                    placeholder="Escribe algo al modelo..."
+                    placeholder="Write something to the model..."
                     onChange={changeHandler}
                     onKeyUp={event => processKeyUp(event.detail.keyCode)}
                     value={value}
                     disabled={loading}
                     inputMode="text" />
-                <Button fullWidth key={2} loading={loading} onClick={sendText} variant="primary" >Enviar</Button>
+                <Button fullWidth key={2} loading={loading} onClick={sendText} variant="primary" >Send</Button>
             </SpaceBetween>
 
 
